@@ -43,7 +43,7 @@ impl Card {
     /// |    2♡|
     /// --------
     pub fn get_display_line(self, line: u8) -> String {
-        let val: String = self.value().to_string();
+        let val: String = self.face.to_string();
         let code: String = self.get_code().to_string();
         match line {
             0 | 5 => return "--------".to_string(),
